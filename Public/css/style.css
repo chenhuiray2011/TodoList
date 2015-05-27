@@ -1,0 +1,38 @@
+#middle{
+	margin-top: 20px;
+}
+#left-sel{
+	width: 25%;
+}
+#per-info{
+	height: 120px;
+	text-align: left;
+	color:#1d508d;
+	font-weight: bold;
+}
+#item-context{
+	width: 50%;
+}
+#item_inputs{
+	float: left;
+}
+#input_text{
+	width: 360px;
+	height: 85px;
+	resize:none;
+}
+#submit_btn{
+	float: right;
+	width: 90px;
+	height: 90px;
+	background-color: #1d508d;
+}
+.item_selector{
+	float: left;
+}
+#add_item{
+	height: 120px;
+}
+#overview{
+	width: 20%;
+}
