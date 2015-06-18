@@ -1,58 +1,111 @@
- <!DOCTYPE html>
- <html>
- <head>
- 	<title>Todo Dom</title>
- 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/index2.css">
- 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css">
- 	<script type="text/javascript" src="__PUBLIC__/js/script.js"></script>
- </head>
- <body>
- <div id="wrap">
-	<nav id="head-nav" class="navblue"></nav>
- <div id="middle">
- 	<div id="left-sel" class="f-left">
- 		<div id="per-info">
- 		<p>HI</p>
- 		<P>BayMax</P>
- 		</div>
- 		<div id="Projects">
- 			<li>Project intial</li>
- 			<li>Project tomo</li>
- 			<li>Project Baymax</li>
- 			<li>Project Future</li>
- 		</div>
- 	</div>
- 	<div id="item-context" class="f-left">
- 		<div id="add_item">
- 			<div id="item_inputs">
- 				<textarea id="input_text"></textarea>
- 				<div style="clear:both;"></div>
-	 			<div class="item_selector">
-	 				Day
-	 			</div>
-	 			<div class="item_selector">
-	 				Projects
-	 			</div>
- 			</div>
- 			<div id="submit_btn" onclick="submit_item('{:U('Index/ajaxadd')}')">
- 			</div>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Todo Dom</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/effects.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/new_index.css">
+</head>
+<body>
+	<div id="wrap">
+		<header>
+			<nav id="sort_nav">
+				<li title="Sort by Time" id="time_sort" class="nav_btn right_split">T</li>
+				<li title="Sort by Project" id="project_sort" class="nav_btn">P</li>
+			</nav>
+			<nav id="view_nav">
+				<li id="list_view" class="nav_btn right_split">L</li>
+				<li id="grid_view" class="nav_btn">G</li>
+			</nav>
+			<div style="clear:both;"></div>	
+		</header>
+		<!-- <aside></aside> -->
+		<article id="board">
+			<article id="projectview">
+				<section></section>
+				<section></section>
+			</article>
+			<article id="timeview">
+				<section id="sec_today" class="sections">
+					<h3>Today</h3>
+					<div title="Add a new item" class="show_add">+</div>
+					<div class="item" draggable="true">
+						<li class="item_li">Firt item added into the List.Firt item added into the List.Firt item added into the List.</li>
+						<div class="fin_btn" style="display:none"></div>
+						<div class="cross_l"></div>
+						<div style="clear:both"></div>
+					</div>
+					<div class="item" draggable="true">				
+						<li class="item_li">Firt item added into the List.</li>
+						<div class="fin_btn" style="display:none"></div>
+						<div class="cross_l" style="display:none"></div>
+						<div style="clear:both"></div>
+					</div>
+					<div class="item">				
+						<li class="item_li">Firt item added into the List.</li>
+						<div class="fin_btn" style="display:none"></div>
+						<div style="clear:both"></div>
+					</div>
+				</section>
+				<section id="sec_tomorrow" class="sections">
+					<h3>Tomorrow</h3>
+					<div title="Add a new item" class="show_add">+</div>
+					<div class="item">				
+						<li class="item_li">Firt item added into the List.</li>
+						<div class="fin_btn" style="display:none"></div>
+						<div style="clear:both"></div>
+					</div>
+					<div class="item">				
+						<li class="item_li">Firt item added into the List.</li>
+						<div class="fin_btn" style="display:none"></div>
+						<div style="clear:both"></div>
+					</div>
+				</section>
+				<section id="sec_upcoming" class="sections">
+					<h3>Upcoming</h3>
+					<div title="Add a new item" class="show_add">+</div>
+					<div class="item">				
+						<li class="item_li">Firt item added into the List.</li>
+						<div class="fin_btn" style="display:none"></div>
+						<div style="clear:both"></div>
+					</div>
+					<div class="item">				
+						<li class="item_li">Firt item added into the List.</li>
+						<div class="fin_btn" style="display:none"></div>
+						<div style="clear:both"></div>
+					</div>
+					<div class="item">				
+						<li class="item_li">Firt item added into the List.</li>
+						<div class="fin_btn" style="display:none"></div>
+						<div style="clear:both"></div>
+					</div>
+				</section>
+				<section id="sec_someday" class="sections">
+					<h3>Someday</h3>
+					<div title="Add a new item" class="show_add">+</div>
+				</section>
+				<div style="clear:both;"></div>
+			</article>
+		</article>
+	</div>
 
- 		</div>
- 		<div id="item_list">
- 		Item_list	
- 		</div>
- 	</div>
- 	<div id="overview" class="f-left">
- 		<div id="calendar">
- 			Collect By Calendar
- 		</div>
- 		<div id="projects">
- 			Collect By Projects
- 		</div>
- 	</div>
- </div>
- </div>
- 
- </body>
- </html>
- <!--<style type="text/css">*{ padding: 0; margin: 0; } body{ background: #fff; font-family: "微软雅黑"; color: #333;font-size:24px} h1{ font-size: 100px; font-weight: normal; margin-bottom: 12px; } p{ line-height: 1.8em; font-size: 36px } a,a:hover,{color:blue;}</style><div style="padding: 24px 48px;"> <p>Hello World! </p><br/></div><script type="text/javascript" src="http://ad.topthink.com/Public/static/client.js"></script><thinkad id="ad_55e75dfae343f5a1"></thinkad><script type="text/javascript" src="http://tajs.qq.com/stats?sId=9347272" charset="UTF-8"></script>-->
+	<div id="add_item" style="display:none;">
+		<div class="container">
+			<div id="cover"></div>
+		</div>
+		<div id="add_form">
+			<div id="exit_btn"></div>
+			<div id="item_edit">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div id="add_btn"></div>
+			<div id="context"></div>
+			<div id="properties"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="__PUBLIC__/js/dom.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/page.js"></script>
+	<!-- <footer></footer> -->
+</body>
+</html>

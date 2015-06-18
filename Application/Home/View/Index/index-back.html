@@ -1,0 +1,82 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>Todo Dom</title>
+ 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/index2.css">
+ 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css">
+ 	
+ </head>
+ <body>
+ <div id="wrap">
+	<nav id="head-nav" class="navblue"></nav>
+ <div id="middle">
+ 	<div id="left-sel" class="f-left">
+ 		<div id="per-info">
+ 		<p>HI</p>
+ 		<P>BayMax</P>
+ 		</div>
+ 		<div id="Projects">
+ 			<li>Project intial</li>
+ 			<li>Project tomo</li>
+ 			<li>Project Baymax</li>
+ 			<li>Project Future</li>
+ 		</div>
+ 	</div>
+ 	<div id="item-context" class="f-left">
+ 		<div id="add_item">
+ 			<div id="item_inputs">
+ 				<textarea id="input_text"></textarea>
+
+ 				<div style="clear:both;"></div>
+ 				<div id="tags_area" class="item_selector">
+	 				<span>#工作# </span>
+	 			</div>
+	 			<div id ="item_selectordiv" class="item_selector">
+		 			<div id="day_choice" class="sel_cho">今天</div>
+		 			<div id="day_choices" style ="display:none;">
+			 			<div class="sel_li">今天</div>
+			 			<div class="sel_li">明天</div>
+			 			<div class="sel_li">即将</div>
+			 			<div class="sel_li">以后</div>
+	 				</div>
+	 			</div>
+	 			<div class="item_selector">
+	 				<div id="pro_choice" class="sel_cho">工作</div>
+		 			<div id="pro_choices" style ="display:none;">
+			 			<div class="sel_li">学习</div>
+			 			<div class="sel_li">生活</div>
+			 			<div class="sel_li">工作</div>
+			 			<div class="sel_li">其他</div>
+	 				</div>
+	 			</div>
+	 			
+ 			</div>
+ 			<div id="submit_btn" onclick="submit_item('{:U('Index/ajaxadd')}')">
+ 			</div>
+
+ 		<div style="clear:both;"></div>
+ 		</div>
+
+ 		<div id="item_list">
+ 		
+ 		</div>
+ 	</div>
+ 	<div id="overview" class="f-left">
+ 		<div id="calendar">
+ 			<div id="today_num">今天：0</div>
+ 			<div id="tomo_num">明天：0</div>
+ 			<div id="about_num">即将：0</div>
+ 			<div id="future_num">以后：0</div>
+ 		</div>
+ 		<div id="projects">
+ 			Collect By Projects
+ 		</div>
+ 	</div>
+ </div>
+ </div>
+ </body>
+  <script type="text/javascript" src="__PUBLIC__/js/ajax.js"></script>
+ <script type="text/javascript" src="__PUBLIC__/js/dom.js"></script>
+ <script type="text/javascript" src="__PUBLIC__/js/script.js"></script>
+ </html>
+ <!--<style type="text/css">*{ padding: 0; margin: 0; } body{ background: #fff; font-family: "微软雅黑"; color: #333;font-size:24px} h1{ font-size: 100px; font-weight: normal; margin-bottom: 12px; } p{ line-height: 1.8em; font-size: 36px } a,a:hover,{color:blue;}</style><div style="padding: 24px 48px;"> <p>Hello World! </p><br/></div><script type="text/javascript" src="http://ad.topthink.com/Public/static/client.js"></script><thinkad id="ad_55e75dfae343f5a1"></thinkad><script type="text/javascript" src="http://tajs.qq.com/stats?sId=9347272" charset="UTF-8"></script>-->
