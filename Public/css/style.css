@@ -1,4 +1,7 @@
-#middle{
+ div{
+ 	font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
+ }
+ #middle{
 	margin-top: 20px;
 }
 #left-sel{
@@ -18,7 +21,7 @@
 }
 #input_text{
 	width: 360px;
-	height: 85px;
+	height: 45px;
 	resize:none;
 }
 #submit_btn{
@@ -26,13 +29,47 @@
 	width: 90px;
 	height: 90px;
 	background-color: #1d508d;
+
 }
 .item_selector{
+	float: left;;
+	width: 60px;
+	line-height: 24px;
+	font-size:12px;
+}
+.sel_li{
+	cursor: pointer;
 	float: left;
+	width: 60px;
+	height: 26px;
+	background-color: #007ee5;
+	color: #ffffff;
+}
+.sel_li:hover{
+	background-color:#ffffff;
+	border:1px solid #007ee5;
+	width: 58px;
+	height: 24px;
+	color: #333333;
+}
+.sel_cho{
+	cursor: pointer;
 }
 #add_item{
 	height: 120px;
 }
 #overview{
 	width: 20%;
+}
+#item_list{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: #dddddd;
+	height: 100px;
+}
+#tags_area{
+	text-align: left;
+	width: 240px;
+	color: #007ee5;
 }

@@ -1,0 +1,32 @@
+@-webkit-keyframes opacity{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}	
+}
+@-webkit-keyframes fin_btn{
+	from{
+		width: 0px;
+	}
+	to{
+		width: 60px;
+	}
+}
+@-webkit-keyframes item_li{
+	from{
+		width: 298px;
+	}
+	to{
+		width: 238px;
+	}
+}
+@-webkit-keyframes cross_l{
+	from{
+		width: 0px;
+	}
+	to{
+		width: 250px;
+	}
+}
