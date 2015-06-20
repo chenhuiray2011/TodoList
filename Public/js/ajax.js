@@ -28,3 +28,4 @@ function ajax(url,args,callback){
     var vl = formurl(url,args);
     AjaxCall(vl,callback);
 }
+//sync try
